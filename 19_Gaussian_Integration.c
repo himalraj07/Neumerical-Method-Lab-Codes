@@ -56,13 +56,16 @@ float gaussianIntegration(float a, float b, int n)
 
 int main()
 {
+    printf("\nGaussian Integration (2 point formula)\n");
+    printf("======================================\n\n");
+
     float a, b;
     int n;
 
-    printf("Enter the range [a, b]: ");
+    printf("Enter the range [a, b] : ");
     scanf("%f %f", &a, &b);
 
-    printf("Select the number of points (2, 3, or 4): ");
+    printf("Select the number of points (2, 3, or 4) : ");
     scanf("%d", &n);
 
     if (n < 2 || n > 4)
@@ -72,7 +75,7 @@ int main()
     }
 
     float result = gaussianIntegration(a, b, n);
-    printf("Integration result: %f\n", result);
+    printf("\nIntegration result: %f\n\n", result);
 
     return 0;
 }

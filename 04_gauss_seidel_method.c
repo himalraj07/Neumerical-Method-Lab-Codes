@@ -35,7 +35,7 @@ int main()
     }
 
     // Printing the final values of x, y, and z
-    printf("\nFinal results after %d iterations:\n", n);
+    printf("\nFinal results after %d iterations :\n", n);
     printf("x = %f\ny = %f\nz = %f\n\n", x, y, z);
 
     return 0;

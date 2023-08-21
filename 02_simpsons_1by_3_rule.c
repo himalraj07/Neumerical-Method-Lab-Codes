@@ -55,7 +55,7 @@ int main()
 
     s1 = (h / 3) * s;
 
-    printf("\n\nResult: %f\n\n", s1);
+    printf("\n\nResult : %f\n\n", s1);
 
     return 0; // Indicating successful program execution.
 }

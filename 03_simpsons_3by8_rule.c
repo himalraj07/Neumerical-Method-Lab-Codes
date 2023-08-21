@@ -51,7 +51,7 @@ int main()
 
     s1 = ((3 * h) / 8) * s;
 
-    printf("\nResult: %f\n\n", s1);
+    printf("\nResult : %f\n\n", s1);
 
     return 0;
 }

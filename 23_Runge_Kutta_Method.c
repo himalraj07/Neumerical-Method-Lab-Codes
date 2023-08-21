@@ -13,17 +13,24 @@ float f(float x, float y)
 
 int main()
 {
+    printf("\nRunge Kutta Method\n");
+    printf("==================\n\n");
+
     float x0, y0, xn, h;
 
     // Input section
-    printf("Enter initial values:\n");
-    printf("x0: ");
+    printf("Enter initial values :\n");
+
+    printf("Enter the value of x0 : ");
     scanf("%f", &x0);
-    printf("y0: ");
+
+    printf("Enter the value of y0 : ");
     scanf("%f", &y0);
-    printf("Enter the final value of x (xn): ");
+
+    printf("Enter the final value of x (xn) : ");
     scanf("%f", &xn);
-    printf("Enter the step size (h): ");
+
+    printf("Enter the step size (h) : ");
     scanf("%f", &h);
 
     // Initialization
@@ -49,6 +56,6 @@ int main()
         printf("%d\t|\t%.2f\t|\t%.6f\n", step, x, y);
         step++;
     }
-
+    printf("\n");
     return 0;
 }

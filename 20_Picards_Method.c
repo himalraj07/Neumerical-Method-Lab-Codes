@@ -18,17 +18,21 @@ double getY(int n, double x)
 
 int main()
 {
+    printf("\nPicard's Method\n");
+    printf("===============\n\n");
+
     double start_value, end_value, allowed_error;
 
     // Limit the number of points to avoid overflow
     const int max_points = 30;
 
-    printf("Enter start value: ");
+    printf("Enter start value : ");
     scanf("%lf", &start_value);
-    printf("Enter end value: ");
+    printf("Enter end value : ");
     scanf("%lf", &end_value);
-    printf("Enter allowed error: ");
+    printf("Enter allowed error : ");
     scanf("%lf", &allowed_error);
+    printf("\n");
 
     // Calculate the number of points needed
     int num_points = (int)((end_value - start_value) / allowed_error) + 1;
@@ -56,6 +60,6 @@ int main()
         double x = start_value + i * allowed_error;
         printf("%-10.4lf%-20.10lf%-20.10lf%-20.10lf\n", x, getY(1, x), getY(2, x), getY(3, x));
     }
-
+    printf("\n");
     return 0;
 }

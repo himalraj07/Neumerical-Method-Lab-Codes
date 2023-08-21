@@ -9,15 +9,17 @@
 
 int main()
 {
+    printf("\nRomberg Integration\n");
+    printf("===================\n\n");
     float x0, xn, t[10][10], h, sm, sl, a;
     int i, k, c, r, m, p, q;
 
     // Get user input for lower and upper limits
-    printf("Enter Lower and upper limit: ");
+    printf("Enter Lower and upper limit : ");
     scanf("%f%f", &x0, &xn);
 
     // Get user input for p and q
-    printf("Enter p and q required for T(p,q): ");
+    printf("Enter p and q required for T(p,q) : ");
     scanf("%d%d", &p, &q);
 
     h = xn - x0;
@@ -49,7 +51,7 @@ int main()
     }
 
     // Display the Romberg estimate of integration
-    printf("Romberg estimate of integration = %f\n", t[p][q]);
+    printf("\nRomberg estimate of integration = %f\n\n", t[p][q]);
 
     return 0;
 }

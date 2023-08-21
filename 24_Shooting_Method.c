@@ -62,23 +62,23 @@ int main()
     printf("Enter initial values\n");
     printf("--------------------\n\n");
 
-    printf("Enter x0 : ");
+    printf("Enter the value of x0 : ");
     scanf("%f", &x0);
 
-    printf("Enter y0 : ");
+    printf("Enter the value of y0 : ");
     scanf("%f", &y0);
 
-    printf("Enter xn : ");
+    printf("Enter the value of xn : ");
     scanf("%f", &xn);
 
-    printf("Enter yn : ");
+    printf("Enter the value of yn : ");
     scanf("%f", &yn);
 
-    printf("Enter h : ");
+    printf("Enter the value of h : ");
     scanf("%f", &h);
 
     // Input: Initial guess M1
-    printf("Enter the initial guess M1 : ");
+    printf("\nEnter the initial guess M1 : ");
     scanf("%f", &m1);
 
     b = yn;
@@ -89,8 +89,8 @@ int main()
 
     if (fabs(b1 - b) < tolerance)
     {
-        printf("The value of x is: %f\n", xn);
-        printf("The value of y is: %f\n", b1);
+        printf("\nThe value of x is : %f\n", xn);
+        printf("The value of y is : %f\n", b1);
         return 0;
     }
     else
@@ -102,7 +102,7 @@ int main()
 
         if (fabs(b2 - b) < tolerance)
         {
-            printf("The value of x is : %f\n", xn);
+            printf("\nThe value of x is : %f\n", xn);
             printf("The value of y is : %f\n", b2);
             return 0;
         }
@@ -115,7 +115,7 @@ int main()
 
             if (fabs(b3 - b) < tolerance)
             {
-                printf("The value of x is : %f\n", xn);
+                printf("\nThe value of x is : %f\n", xn);
                 printf("The value of y is : %f\n", b3);
                 return 0;
             }

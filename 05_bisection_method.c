@@ -35,7 +35,7 @@ int main()
     }
     else
     {
-        printf("\nIteration\t  x1\t\t f(x1)\t\t  x2\t\t f(x2)\t\t  x3\t\t f(x3)\n");
+        printf("\nIteration\t  x1\t\t  f(x1)\t\t  x2\t\t f(x2)\t\t  x3\t\t f(x3)\n");
 
         do
         {
